@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/english">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meat and Dairy\n (肉と乳製品)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="383dp"
+        android:text="Meat - Niku肉\nChicken - Toriniku 鶏肉\nPig - Butaniku 豚肉\n Cow - Gyuniku 牛肉
+\nLamb - Ramuniku ラム肉\nMilk - Miruku ミルク\nEggs - Tamago 卵\nCheese - Chizu
+チーズ\nBread - Pan パン"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Foods3NextBTN"
+        android:layout_width="125dp"
+        android:layout_height="87dp"
+        android:text="Next\n次"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Foods3BackBTN"
+        android:layout_width="125dp"
+        android:layout_height="87dp"
+        android:text="Back\nバック"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.858" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

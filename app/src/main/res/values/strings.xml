@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Japanglish</string>
+    <string name="fruits">
+        anzo - apricot 杏子
+        banana - banana バナナ
+        budou - grapes ブドウ
+        ichigo - strawberry イチゴ
+        kabocha - pumpkin かぼちゃ
+        kiui - kiwi キウイ
+        mango - mango マンゴー
+        meron - melon メロン
+        mikan - mini orange みかん
+        momo - peach 桃
+        nashi - pear なし
+        orenji orange オレンジ
+        remon - lemon レモン
+        ringo - apple 林檎
+        sakuranbo - cherry さくらんぼ
+        suika - watermelon スイカ
+        zakuro - Pomegranate ザクロ
+        </string>
+</resources>

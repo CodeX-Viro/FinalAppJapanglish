@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/english">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fruits (果物)"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.044" />
+
+    <ImageView
+        android:layout_width="343dp"
+        android:layout_height="371dp"
+        android:src="@drawable/fruits"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.089" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="247dp"
+        android:text="Anzu - Apricot 杏子 | Budou - Grapes ブドウ\nNichigo - Strawberry イチゴ \nKabocha - Pumpkin かぼちゃ
+| Kiui - Kiwi キウイ Meron - Melon メロン Mikan - Mini Orange みかん\nMomo - Peach 桃 | Nashi - Pear なし\n
+Orenji - Orange オレンジ | Remon - Remon レモン\nRingo - Apple林檎 | Sakuranbo - Cherryさくらんぼ\n
+Suika - Watermelon スイカ \n Zakuro - Pomegranate ザクロ"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.739" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FoodsNextBTN"
+        android:layout_width="125dp"
+        android:layout_height="87dp"
+        android:text="Next\n次"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.867"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/FoodsBackBTN"
+        android:layout_width="125dp"
+        android:layout_height="87dp"
+        android:text="Back\nバック"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.914" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
