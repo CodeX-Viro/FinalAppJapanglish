@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/english">
 
+
     <TextView
         android:layout_width="344dp"
         android:layout_height="102dp"
@@ -18,7 +19,23 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.125" />
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/all_time_high"
+        android:layout_width="338dp"
+        android:layout_height="45dp"
+        android:text="All-Time Highscore:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/EasyQuizModeBTN"

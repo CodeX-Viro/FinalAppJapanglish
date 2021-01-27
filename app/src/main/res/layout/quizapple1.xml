@@ -7,7 +7,7 @@
     android:background="@drawable/english">
 
     <TextView
-        android:id="@+id/text_view_countdown"
+        android:id="@+id/text_view_question_count"
         android:layout_width="169dp"
         android:layout_height="35dp"
         android:text="Question 1/x"
@@ -39,7 +39,7 @@
         app:layout_constraintVertical_bias="0.034" />
 
     <TextView
-        android:id="@+id/text_view_timer"
+        android:id="@+id/text_view_countdown"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Time: 00:30"
@@ -54,6 +54,22 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052" />
 
+    <TextView
+        android:id="@+id/text_view_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 1:"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422" />
+
     <ImageView
         android:id="@+id/quizquestion"
         android:layout_width="215dp"
@@ -63,9 +79,10 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.185" />
 
     <RadioGroup
+        android:id="@+id/radio_group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
