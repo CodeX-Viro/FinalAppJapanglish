@@ -29,26 +29,12 @@ public class QuizMenu extends AppCompatActivity {
         loadHighScore();
 
         Button easy = (Button) findViewById(R.id.EasyQuizModeBTN);
-        Button normal = (Button) findViewById(R.id.NormalQuizModeBTN);
-        Button difficult = (Button) findViewById(R.id.DifficultQuizModeBTN);
         Button back = (Button) findViewById(R.id.QuizMenuBackBTN);
 
         easy.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startQuiz();
-            }
-        });
-        normal.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(QuizMenu.this, NormalQuiz1.class));
-            }
-        });
-        difficult.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(QuizMenu.this, DifficultQuizMenu.class));
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

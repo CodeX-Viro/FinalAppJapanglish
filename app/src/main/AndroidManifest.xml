@@ -24,8 +24,6 @@
         </activity>
         <activity android:name=".EngToJap">
         </activity>
-        <activity android:name=".JapToEng">
-        </activity>
         <activity android:name=".EasyEngToJap">
         </activity>
         <activity android:name=".EasySchoolSupplies">
@@ -46,8 +44,6 @@
         </activity>
         <activity android:name=".EasyQuizMenu">
         </activity>
-        <activity android:name=".NormalEngToJap">
-        </activity>
         <activity android:name=".CommonPhrases">
         </activity>
         <activity android:name=".CommonPhrases2">
@@ -64,23 +60,9 @@
         </activity>
         <activity android:name=".QuizMenu">
         </activity>
-        <activity android:name=".NormalQuizMenu">
-        </activity>
         <activity android:name=".MiniWikipedia">
         </activity>
         <activity android:name=".EasyQuiz1">
-        </activity>
-        <activity android:name=".NormalQuiz1">
-        </activity>
-        <activity android:name=".FoodSectionJ">
-        </activity>
-        <activity android:name=".ItemSectionJ">
-        </activity>
-        <activity android:name=".VocabularyJ">
-        </activity>
-        <activity android:name=".DifficultQuizMenu">
-        </activity>
-        <activity android:name=".DifficultEngToJap">
         </activity>
 
 

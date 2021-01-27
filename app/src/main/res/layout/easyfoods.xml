@@ -36,7 +36,7 @@
         android:text="Anzu - Apricot 杏子 | Budou - Grapes ブドウ\nNichigo - Strawberry イチゴ \nKabocha - Pumpkin かぼちゃ
 | Kiui - Kiwi キウイ Meron - Melon メロン Mikan - Mini Orange みかん\nMomo - Peach 桃 | Nashi - Pear なし\n
 Orenji - Orange オレンジ | Remon - Remon レモン\nRingo - Apple林檎 | Sakuranbo - Cherryさくらんぼ\n
-Suika - Watermelon スイカ \n Zakuro - Pomegranate ザクロ"
+,スイカ \n Zakuro - Pomegranate ザクロ"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="14dp"

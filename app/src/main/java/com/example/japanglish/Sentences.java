@@ -1,4 +1,4 @@
 package com.example.japanglish;
 
-public class Kanji {
+public class Sentences {
 }

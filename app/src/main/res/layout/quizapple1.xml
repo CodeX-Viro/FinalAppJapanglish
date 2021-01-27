@@ -8,19 +8,19 @@
 
     <TextView
         android:id="@+id/text_view_question_count"
-        android:layout_width="169dp"
-        android:layout_height="35dp"
+        android:layout_width="161dp"
+        android:layout_height="34dp"
         android:text="Question 1/x"
-        android:textAlignment="center"
+
         android:textColor="@color/black"
-        android:textSize="24dp"
+        android:textSize="19dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.056"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.094" />
 
     <TextView
         android:id="@+id/text_view_score"
@@ -54,6 +54,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.052" />
 
+
     <TextView
         android:id="@+id/text_view_question"
         android:layout_width="wrap_content"
@@ -61,41 +62,30 @@
         android:text="Question 1:"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.422" />
-
-    <ImageView
-        android:id="@+id/quizquestion"
-        android:layout_width="215dp"
-        android:layout_height="192dp"
-        android:src="@drawable/apple"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.286" />
 
     <RadioGroup
         android:id="@+id/radio_group"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="356dp"
+        android:layout_height="204dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662">
+        app:layout_constraintVertical_bias="0.675">
 
         <RadioButton
             android:id="@+id/radio_button_1"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
             android:text="Option 1"
             android:textSize="20dp"
             tools:layout_editor_absoluteX="73dp"
@@ -104,7 +94,7 @@
         <RadioButton
             android:id="@+id/radio_button_2"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
             android:text="Option 1"
             android:textSize="20dp"
             tools:layout_editor_absoluteX="73dp"
@@ -113,7 +103,7 @@
         <RadioButton
             android:id="@+id/radio_button_3"
             android:layout_width="wrap_content"
-            android:layout_height="75dp"
+            android:layout_height="wrap_content"
             android:text="Option 1"
             android:textSize="20dp"
             tools:layout_editor_absoluteX="73dp"

@@ -26,7 +26,7 @@ public class CommonPhrases extends AppCompatActivity {
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(CommonPhrases.this, NormalEngToJap.class));
+                startActivity(new Intent(CommonPhrases.this, EngToJap.class));
             }
         });
 

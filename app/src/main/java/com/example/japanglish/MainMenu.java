@@ -17,14 +17,13 @@ public class MainMenu extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainmenu);
 
-        Button JapToEng = (Button) findViewById(R.id.JapToEngBTN);
+        Button JapToEng = (Button) findViewById(R.id.QuizBTN);
         Button EngToJap = (Button) findViewById(R.id.EngToJapBTN);
-        Button Wikipedia = (Button) findViewById(R.id.WikipediaBTN);
 
         JapToEng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainMenu.this, JapToEng.class));
+                startActivity(new Intent(MainMenu.this, QuizMenu.class));
             }
         });
         EngToJap.setOnClickListener(new View.OnClickListener() {
@@ -33,13 +32,7 @@ public class MainMenu extends AppCompatActivity {
                 startActivity(new Intent(MainMenu.this, EngToJap.class));
             }
         });
-        Wikipedia.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainMenu.this, MiniWikipedia.class));
-            }
-        });
-
+        
     }
 
     }

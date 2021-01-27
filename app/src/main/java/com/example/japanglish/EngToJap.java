@@ -28,13 +28,13 @@ public class EngToJap extends AppCompatActivity {
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EngToJap.this, NormalEngToJap.class));
+                startActivity(new Intent(EngToJap.this, CommonPhrases.class));
             }
         });
         difficult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(EngToJap.this, DifficultEngToJap.class));
+                startActivity(new Intent(EngToJap.this, Sentences.class));
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

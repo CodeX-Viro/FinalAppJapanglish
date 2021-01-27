@@ -20,7 +20,7 @@ public class AdvancedWords3 extends AppCompatActivity {
         next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(AdvancedWords3.this, NormalQuiz1.class));
+                startActivity(new Intent(AdvancedWords3.this, EasyQuizMenu.class));
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

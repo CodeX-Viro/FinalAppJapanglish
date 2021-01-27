@@ -9,21 +9,22 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="English - Japanese \n英語 - 日本語"
+        android:text="Learning Mode \n英語 - 日本語"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="36dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.044" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Choose a Difficulty"
+        android:text="Choose a Topic"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="26dp"
@@ -31,41 +32,41 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.268" />
+        app:layout_constraintVertical_bias="0.182" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/EasyBTN2"
         android:layout_width="298dp"
         android:layout_height="95dp"
-        android:text="Easy mode\n簡単"
+        android:text="Basic words\n簡単"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.46"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.38" />
+        app:layout_constraintVertical_bias="0.316" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/NormalBTN2"
         android:layout_width="296dp"
         android:layout_height="92dp"
-        android:text="Normal mode\n正常"
+        android:text="Intermediate\n正常"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.539" />
+        app:layout_constraintVertical_bias="0.485" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/DifficultBTN2"
         android:layout_width="296dp"
         android:layout_height="92dp"
-        android:text="Difficult Mode\n難しい"
+        android:text="Advanced\n難しい"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -73,7 +74,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.702" />
+        app:layout_constraintVertical_bias="0.666" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/EngToJapBackBTN"
