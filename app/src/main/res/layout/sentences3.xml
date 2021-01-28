@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/normaljaptoeng">
+    android:background="@drawable/english">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Common Phrases\n (一般的なフレーズ)"
+        android:text="Useful Sentences\n (肉と乳製品)"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="36dp"
@@ -21,18 +21,27 @@
         app:layout_constraintVertical_bias="0.044" />
 
 
-    <ImageView
-        android:layout_width="351dp"
-        android:layout_height="414dp"
-        android:src="@drawable/a6"
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="383dp"
+        android:text="#14 Arigatou gozaimasu (ありがとうございます) – Thank you
+\n#15 Douitashimashite (どういたしまして) – You’re welcome
+\n#16 Sumimasen (すみません) – I’m sorry/excuse me (Hint: you can use this for anything from apologising for stumbling into someone on the train to asking for help or asking for people to move out of your way.)
+\n#17 Gomen nasai (ごめんなさい) – I’m sorry n’t wnis less “excuse me” and more “I’m truly sorry from the bottom of my heart.” Use it
+\n#18 Yoroshiku onegaishimasu (よろしくおねがいします) – I’m in your debt! (Hint: someone you are counting on or indebted to. For example, if you're starting out at a new job in Japan, you might introduce yourself and then add this at the end. You might also use it if you’ve asked someone a favour, such as to show you around or give you directions.)
+"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.448" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NCP3NextBTN"
+        android:id="@+id/Sentences3NextBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Next\n次"
@@ -46,7 +55,7 @@
         app:layout_constraintVertical_bias="0.858" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NCP3BackBTN"
+        android:id="@+id/Sentences3BackBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Back\nバック"

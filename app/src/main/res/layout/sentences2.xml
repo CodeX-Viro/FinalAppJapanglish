@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/normaljaptoeng">
+    android:background="@drawable/english">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Common Phrases\n (一般的なフレーズ)"
+        android:text="Useful Sentences\n (肉と乳製品)"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="36dp"
@@ -21,18 +21,28 @@
         app:layout_constraintVertical_bias="0.044" />
 
 
-    <ImageView
-        android:layout_width="351dp"
-        android:layout_height="414dp"
-        android:src="@drawable/a3"
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="383dp"
+        android:text="#9 Namae wa nan desu ka? (名前は何ですか) – What’s your name?
+\n#10 Watashi no namae wa _____ desu (私の名前は＿＿です) – My name is ______
+\n#11 Doko kara kimashita ka? (どこから来ましたか) – Where are you from?
+\n#12 Watashi wa ______ kara kimashita (私は＿＿から来ました) – I’m from __________.
+\n#13 Sou desu ka? (そうですか) – Is that so?/Really?/I see
+\n#14 Arigatou gozaimasu (ありがとうございます) – Thank you
+\n#15 Douitashimashite (どういたしまして) – You’re welcome"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.448" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NewNewNextBTN"
+        android:id="@+id/Sentences2NextBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Next\n次"
@@ -46,7 +56,7 @@
         app:layout_constraintVertical_bias="0.858" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NCP2BackBTN"
+        android:id="@+id/Sentences2BackBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Back\nバック"

@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/normaljaptoeng">
+    android:background="@drawable/english">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Common Phrases\n (一般的なフレーズ)"
+        android:text="Useful Sentences\n (肉と乳製品)"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="36dp"
@@ -21,18 +21,28 @@
         app:layout_constraintVertical_bias="0.044" />
 
 
-    <ImageView
-        android:layout_width="351dp"
-        android:layout_height="414dp"
-        android:src="@drawable/a3"
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="383dp"
+        android:text="#19 Itadakimasu (いただきます) – Let’s dig in (Hint: say this before meals as a way to politely say you’re going to begin enjoying your food.)
+\n#20 Gochisousama deshita (ごちそうさまでした) – That was delicious (Hint: say this after meals as a way to say thank you.)
+\n#21 Eigo te iu no wa… (英語ていうのは) – And in English, that’s…?
+\n#22 Wakarimasen (わかりません) – I don’t understand
+\n#23 Shirimasen (知りません) – I don’t know
+\n#24 Wasuremashita (忘れました) – I forgot
+\n#25 Tetsudatte kuremasen ka? (手伝ってくれませんか) – Can you help me?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16.5dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.448" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NewNewNextBTN"
+        android:id="@+id/Sentences4NextBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Next\n次"
@@ -46,7 +56,7 @@
         app:layout_constraintVertical_bias="0.858" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NCP2BackBTN"
+        android:id="@+id/Sentences4BackBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Back\nバック"

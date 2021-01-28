@@ -19,6 +19,7 @@ public class MainMenu extends AppCompatActivity {
 
         Button JapToEng = (Button) findViewById(R.id.QuizBTN);
         Button EngToJap = (Button) findViewById(R.id.EngToJapBTN);
+        Button MMBack = (Button) findViewById(R.id.MenuBackBTN);
 
         JapToEng.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,6 +31,12 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainMenu.this, EngToJap.class));
+            }
+        });
+        MMBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainMenu.this, MainActivity.class));
             }
         });
 

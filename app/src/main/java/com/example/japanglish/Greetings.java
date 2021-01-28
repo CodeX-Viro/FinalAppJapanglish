@@ -14,16 +14,16 @@ public class Greetings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.greetings);
 
-        Button next = (Button) findViewById(R.id.Greetings1NextBTN);
-        Button back = (Button) findViewById(R.id.Greetings1BackBTN);
+        Button greetings1next = (Button) findViewById(R.id.Greetings1NextBTN);
+        Button greetings1back = (Button) findViewById(R.id.Greetings1BackBTN);
 
-        next.setOnClickListener(new View.OnClickListener() {
+        greetings1next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Greetings.this, Greetings2.class));
             }
         });
-        back.setOnClickListener(new View.OnClickListener() {
+        greetings1back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Greetings.this, CommonPhrases2.class));

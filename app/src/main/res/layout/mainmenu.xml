@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.474" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/LogoutBTN"
+        android:id="@+id/MenuBackBTN"
         android:layout_width="130dp"
         android:layout_height="71dp"
         android:text="Back\nログアウト"

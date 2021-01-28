@@ -38,7 +38,10 @@
         <activity android:name=".AdvancedWords3"></activity>
         <activity android:name=".QuizMenu"></activity>
         <activity android:name=".EasyQuiz1"></activity>
-        <activity android:name=".Commonphrases3Activity"></activity>
+        <activity android:name=".Sentences"></activity>
+        <activity android:name=".Sentences2"></activity>
+        <activity android:name=".Sentences3"></activity>
+        <activity android:name=".Sentences4"></activity>
     </application>
 
 </manifest>

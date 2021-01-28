@@ -4,12 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/normaljaptoeng">
+    android:background="@drawable/english">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Common Phrases\n (一般的なフレーズ)"
+        android:text="Useful Sentences\n (肉と乳製品)"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="36dp"
@@ -21,18 +21,29 @@
         app:layout_constraintVertical_bias="0.044" />
 
 
-    <ImageView
-        android:layout_width="351dp"
-        android:layout_height="414dp"
-        android:src="@drawable/a3"
+    <TextView
+        android:layout_width="317dp"
+        android:layout_height="383dp"
+        android:text="#1 Konnichiwa (こんにちは) – Hello\n
+#2 Ohayou gozaimasu (おはようございます) – Good morning\n
+#3 Konbanwa (こんにちは) – Good evening\n
+#4 Moshi moshi (もしもし) – Hello (but only if you’re on the phone)\n
+#5 Ogenki desu ka? (お元気ですか) – How are you?\n
+#6 Genki desu (元気です) – I’m good/I’ve been doing well, thanks\n
+#7 Ohisashiburi desu ne (お久しぶりですね) – Long time no see\n
+#8 _______–san mo? (______-さんも？) – And you? "
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438" />
+        app:layout_constraintVertical_bias="0.448" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NewNewNextBTN"
+        android:id="@+id/Sentences1NextBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Next\n次"
@@ -46,7 +57,7 @@
         app:layout_constraintVertical_bias="0.858" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/NCP2BackBTN"
+        android:id="@+id/Sentences1BackBTN"
         android:layout_width="125dp"
         android:layout_height="87dp"
         android:text="Back\nバック"

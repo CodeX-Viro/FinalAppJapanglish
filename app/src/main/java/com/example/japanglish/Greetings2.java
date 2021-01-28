@@ -14,16 +14,16 @@ public class Greetings2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.greetings2);
 
-        Button next = (Button) findViewById(R.id.Greetings2NextBTN);
-        Button back = (Button) findViewById(R.id.Greetings2BackBTN);
+        Button greetings2next = (Button) findViewById(R.id.Greetings2NextBTN);
+        Button greetings2back = (Button) findViewById(R.id.Greetings2BackBTN);
 
-        next.setOnClickListener(new View.OnClickListener() {
+        greetings2next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Greetings2.this, AdvancedWords.class));
             }
         });
-        back.setOnClickListener(new View.OnClickListener() {
+        greetings2back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Greetings2.this, Greetings.class));

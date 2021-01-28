@@ -14,12 +14,9 @@ import java.util.List;
 public class QuizDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "QuizDatabase.db";
-    private static final int DATABASE_VERSION = 4;
+    private static final int DATABASE_VERSION = 5;
 
     private SQLiteDatabase db;
-
-
-
     public QuizDbHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
@@ -126,10 +123,31 @@ public class QuizDbHelper extends SQLiteOpenHelper {
                 "\n" +
                 "質問 :  Eggの日本語訳は何ですか？", "A. Tamago 卵", "B. Jagaimo じゃがいも", "C. Tori 鳥", 1 );
         addQuestion(q19);
-        Question q20 = new Question("What is the Japanese translation of Scissors?\n" +
+        Question q20 = new Question("What is the Japanese translation of How are you?\n" +
                 "\n" +
-                "質問 :  Scissorsの日本語訳は何ですか？", "A. Hasami はさみ", "B. Orenjii オレンジ", "C. Budo ブドウ", 1 );
+                "質問 :  How are youの日本語訳は何ですか？", "Sou desu ka? (そうですか) ", "B. Ogenki desu ka? (お元気ですか)", "C. Sumimasen (すみません)", 2 );
         addQuestion(q20);
+        Question q21 = new Question("What is the Japanese translation of Good Evening?\n" +
+                "\n" +
+                "質問 :  Good Eveningの日本語訳は何ですか？", "A. Arigatou gozaimasu (ありがとうございます)", "B. Konnichiwa (こんにちは)", "C. Konbanwa (こんにちは)", 3 );
+        addQuestion(q21);
+        Question q22 = new Question("What is the Japanese translation of Good Morning?\n" +
+                "\n" +
+                "質問 :  Good Morningの日本語訳は何ですか？", "A. Konbanwa (こんにちは)", "B. Arigatou gozaimasu (ありがとうございます)", "C. Ohayou gozaimasu (おはようございます)", 1 );
+        addQuestion(q22);
+        Question q23 = new Question("What is the Japanese translation of Nice to meet you?\n" +
+                "\n" +
+                "質問 :  Nice to meet youの日本語訳は何ですか？", "A. Hajimimashite (はじめまして)", "B. Sumimasen (すみません)", "C. Arigatou gozaimasu (ありがとうございます)", 1 );
+        addQuestion(q23);
+        Question q24 = new Question("What is the Japanese translation of Your Welcome?\n" +
+                "\n" +
+                "質問 :  Scissorsの日本語訳は何ですか？", "A. Konnichiwa (こんにちは)", "Arigatou gozaimasu (ありがとうございます)", "C. Douitashimashite (どういたしまして) ", 3 );
+        addQuestion(q24);
+        Question q25 = new Question("What is the Japanese translation of Goodbye?\n" +
+                "\n" +
+                "質問 :  Scissorsの日本語訳は何ですか？", "A. Gomen nasai (ごめんなさい) ", "Arigatou gozaimasu (ありがとうございます)", "C. Sayonara さようなら", 3 );
+        addQuestion(q25);
+
     }
     private void addQuestion(Question question){
         ContentValues cv = new ContentValues();
