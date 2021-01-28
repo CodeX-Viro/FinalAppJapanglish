@@ -14,7 +14,7 @@ import java.util.List;
 public class QuizDbHelper extends SQLiteOpenHelper {
 
     private static final String DATABASE_NAME = "QuizDatabase.db";
-    private static final int DATABASE_VERSION = 5;
+    private static final int DATABASE_VERSION = 6;
 
     private SQLiteDatabase db;
     public QuizDbHelper(Context context) {
@@ -133,20 +133,50 @@ public class QuizDbHelper extends SQLiteOpenHelper {
         addQuestion(q21);
         Question q22 = new Question("What is the Japanese translation of Good Morning?\n" +
                 "\n" +
-                "質問 :  Good Morningの日本語訳は何ですか？", "A. Konbanwa (こんにちは)", "B. Arigatou gozaimasu (ありがとうございます)", "C. Ohayou gozaimasu (おはようございます)", 1 );
+                "質問 : Good Morningの日本語訳は何ですか？", "A. Konbanwa (こんにちは)", "B. Arigatou gozaimasu (ありがとうございます)", "C. Ohayou gozaimasu (おはようございます)", 1 );
         addQuestion(q22);
         Question q23 = new Question("What is the Japanese translation of Nice to meet you?\n" +
                 "\n" +
-                "質問 :  Nice to meet youの日本語訳は何ですか？", "A. Hajimimashite (はじめまして)", "B. Sumimasen (すみません)", "C. Arigatou gozaimasu (ありがとうございます)", 1 );
+                "質問 : Nice to meet youの日本語訳は何ですか？", "A. Hajimimashite (はじめまして)", "B. Sumimasen (すみません)", "C. Arigatou gozaimasu (ありがとうございます)", 1 );
         addQuestion(q23);
         Question q24 = new Question("What is the Japanese translation of Your Welcome?\n" +
                 "\n" +
-                "質問 :  Scissorsの日本語訳は何ですか？", "A. Konnichiwa (こんにちは)", "Arigatou gozaimasu (ありがとうございます)", "C. Douitashimashite (どういたしまして) ", 3 );
+                "質問 : Your Welcomeの日本語訳は何ですか？", "A. Konnichiwa (こんにちは)", "Arigatou gozaimasu (ありがとうございます)", "C. Douitashimashite (どういたしまして) ", 3 );
         addQuestion(q24);
         Question q25 = new Question("What is the Japanese translation of Goodbye?\n" +
                 "\n" +
-                "質問 :  Scissorsの日本語訳は何ですか？", "A. Gomen nasai (ごめんなさい) ", "Arigatou gozaimasu (ありがとうございます)", "C. Sayonara さようなら", 3 );
+                "質問 : Goodbyeの日本語訳は何ですか？", "A. Gomen nasai (ごめんなさい) ", "Arigatou gozaimasu (ありがとうございます)", "C. Sayonara さようなら", 3 );
         addQuestion(q25);
+        Question q26 = new Question ("What is Pencil Japanese translation?\n" +
+                "質問：Pencilの日本語訳とは何ですか？","A.Enpitsu 鉛筆","B.Keshigomu 消しゴム","C.Dentaku 電卓", 1 );
+        addQuestion(q26);
+        Question q27 = new Question ("What is Ballpen Japanese translation?\n" +
+                "質問：Ballpenの日本語訳とは何ですか？","A.Enpitsukezuri 鉛筆削り","B.Borupenボールペン","C.Foruda フォルダ", 2 );
+        addQuestion(q27);
+        Question q28 = new Question ("What is Eraser Japanese translation?\n" +
+                "質問：Eraserの日本語訳とは何ですか？","A.Keshigomu 消しゴム","B.Foruda フォルダ","C.Hotchikisu ホッチキス ", 1 );
+        addQuestion(q28);
+        Question q29 = new Question ("What is Stapeler Japanese translation?\n" +
+                "質問：Stapelerの日本語訳とは何ですか？\n","A.Dentaku 電卓","B. Nōtoノート","C.Hotchikisu ホッチキス", 3 );
+        addQuestion(q29);
+        Question q30 = new Question ("What is Pencil Sharpener Japanese translation?\n" +
+                "質問：Pencil Sharpenerの日本語訳とは何ですか？","A.Nōtoノート","B.Hotchikisu ホッチキス ","C.Enpitsukezuri 鉛筆削り", 3 );
+        addQuestion(q30);
+        Question q31 = new Question ("What is butter's Japanese translation?\n" +
+                "質問：Butterの日本語訳とは何ですか？","A.Batā バター","B.Ren'nyū 練乳","C.Aisukurīmu アイスクリーム", 1 );
+        addQuestion(q31);
+        Question q32 = new Question ("What is Notebook  Japanese translation?\n" +
+                " 質問：Notebookの日本語訳とは何ですか？", "A.Nōtoノート","B.Hotchikisu ホッチキス", "C.Pēpākurippuペーパークリップ", 1);
+        addQuestion(q32);
+        Question q33 = new Question ("What is Paper Clip Japanese translation?\n" +
+                "質問：Paper Clipの日本語訳とは何ですか？","A.Nōtoノート","B.Hotchikisu ホッチキス ","C.Pēpākurippuペーパークリップ", 3 );
+        addQuestion(q33);
+        Question q34 = new Question ("What is Cheese Japanese translation?\n" +
+                "質問：Cheeseの日本翻訳とは何ですか？","A.Batā バター","B.Ren'nyū 練乳","C. Chīzu チーズ", 3 );
+        addQuestion(q34);
+        Question q35 = new Question ("What is HoneyJapanese translation?\n" +
+                "質問：Honeyの日本翻訳とは何ですか","A. Hachimitsu はちみつ","B.Ren'nyū 練乳","C.Chīzu チーズ", 2 );
+        addQuestion(q35);
 
     }
     private void addQuestion(Question question){
