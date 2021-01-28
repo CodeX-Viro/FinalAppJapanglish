@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.japanglish">
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
-    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
 
     <application
         android:allowBackup="true"
@@ -12,60 +9,36 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Japanglish">
-
-
+        />
         <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainMenu">
-        </activity>
-        <activity android:name=".EngToJap">
-        </activity>
-        <activity android:name=".EasyEngToJap">
-        </activity>
-        <activity android:name=".EasySchoolSupplies">
-        </activity>
-        <activity android:name=".SchoolSupplies2">
-        </activity>
-        <activity android:name=".MainActivity">
-        </activity>
-        <activity android:name=".EasyNumbers">
-        </activity>
-        <activity android:name=".EasyNumbers2">
-        </activity>
-        <activity android:name=".EasyFoods">
-        </activity>
-        <activity android:name=".EasyFoods2">
-        </activity>
-        <activity android:name=".EasyFoods3">
-        </activity>
-        <activity android:name=".EasyQuizMenu">
-        </activity>
-        <activity android:name=".CommonPhrases">
-        </activity>
-        <activity android:name=".CommonPhrases2">
-        </activity>
-        <activity android:name=".Greetings">
-        </activity>
-        <activity android:name=".Greetings2">
-        </activity>
-        <activity android:name=".AdvancedWords">
-        </activity>
-        <activity android:name=".AdvancedWords2">
-        </activity>
-        <activity android:name=".AdvancedWords3">
-        </activity>
-        <activity android:name=".QuizMenu">
-        </activity>
-        <activity android:name=".MiniWikipedia">
-        </activity>
-        <activity android:name=".EasyQuiz1">
-        </activity>
-
-
+        <activity android:name=".MainMenu"></activity>
+        <activity android:name=".EngToJap"></activity>
+        <activity android:name=".EasyEngToJap"></activity>
+        <activity android:name=".EasySchoolSupplies"></activity>
+        <activity android:name=".SchoolSupplies2"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".EasyNumbers"></activity>
+        <activity android:name=".EasyNumbers2"></activity>
+        <activity android:name=".EasyFoods"></activity>
+        <activity android:name=".EasyFoods2"></activity>
+        <activity android:name=".EasyFoods3"></activity>
+        <activity android:name=".EasyQuizMenu"></activity>
+        <activity android:name=".CommonPhrases"></activity>
+        <activity android:name=".CommonPhrases2"></activity>
+        <activity android:name=".Greetings"></activity>
+        <activity android:name=".Greetings2"></activity>
+        <activity android:name=".AdvancedWords"></activity>
+        <activity android:name=".AdvancedWords2"></activity>
+        <activity android:name=".AdvancedWords3"></activity>
+        <activity android:name=".QuizMenu"></activity>
+        <activity android:name=".EasyQuiz1"></activity>
+        <activity android:name=".Commonphrases3Activity"></activity>
     </application>
 
 </manifest>
