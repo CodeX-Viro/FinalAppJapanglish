@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/english">
+    android:background="@drawable/engtojapback">
 
     <TextView
         android:layout_width="wrap_content"
@@ -22,8 +22,8 @@
 
 
     <TextView
-        android:layout_width="317dp"
-        android:layout_height="383dp"
+        android:layout_width="341dp"
+        android:layout_height="420dp"
         android:text="#14 Arigatou gozaimasu (ありがとうございます) – Thank you
 \n#15 Douitashimashite (どういたしまして) – You’re welcome
 \n#16 Sumimasen (すみません) – I’m sorry/excuse me (Hint: you can use this for anything from apologising for stumbling into someone on the train to asking for help or asking for people to move out of your way.)
@@ -48,11 +48,11 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.835"
+        app:layout_constraintHorizontal_bias="0.825"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
+        app:layout_constraintVertical_bias="0.902" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/Sentences3BackBTN"
@@ -62,10 +62,10 @@
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
+        app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.858" />
+        app:layout_constraintVertical_bias="0.902" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

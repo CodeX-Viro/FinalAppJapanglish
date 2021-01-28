@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
                         Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
                     Toast.makeText(MainActivity.this, "You have already granted this permission!",
                             Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(MainActivity.this, MainMenu.class));
                 } else {
                     requestStoragePermission();
                 }
