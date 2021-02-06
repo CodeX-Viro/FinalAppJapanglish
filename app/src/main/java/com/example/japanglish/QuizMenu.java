@@ -45,17 +45,18 @@ public class QuizMenu extends AppCompatActivity {
         });
 
     }
-    private void startQuiz(){
+
+    private void startQuiz() {
         Intent intent = new Intent(QuizMenu.this, EasyQuiz1.class);
         startActivityForResult(intent, REQUEST_CODE_QUIZ);
     }
 
-    protected void onActivityResult(int requestCode, int resultCode, Intent data){
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (requestCode == REQUEST_CODE_QUIZ){
-            if (resultCode == RESULT_OK){
+        if (requestCode == REQUEST_CODE_QUIZ) {
+            if (resultCode == RESULT_OK) {
                 int score = data.getIntExtra(EasyQuiz1.EXTRA_SCORE, 0);
-                if (score > highscore){
+                if (score > highscore) {
                     updateHighscore(score);
                 }
 
@@ -63,12 +64,13 @@ public class QuizMenu extends AppCompatActivity {
         }
     }
 
-    private void loadHighScore (){
+    private void loadHighScore() {
         SharedPreferences prefs = getSharedPreferences(SHARED_PREFS, MODE_PRIVATE);
         highscore = prefs.getInt(KEY_HIGHSCORE, 0);
         textViewHighscore.setText("Highscore: " + highscore);
     }
-    private void updateHighscore(int highscoreNew){
+
+    private void updateHighscore(int highscoreNew) {
         highscore = highscoreNew;
         textViewHighscore.setText("Highscore: " + highscore);
 

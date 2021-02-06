@@ -4,9 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/splashscreen">
-
+    android:background="@drawable/splashscreen"
+    tools:context=".MainActivity">
 
     <ImageView
         android:layout_width="347dp"
@@ -21,9 +20,8 @@
     <pl.droidsonroids.gif.GifTextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:drawableTop="@drawable/loading"
         android:layout_marginTop="420dp"
-        />
+        android:drawableTop="@drawable/loading" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

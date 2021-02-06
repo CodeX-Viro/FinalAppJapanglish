@@ -49,7 +49,6 @@ public class EasyQuiz1 extends AppCompatActivity {
     private long backPressedItem;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -79,8 +78,8 @@ public class EasyQuiz1 extends AppCompatActivity {
         buttonConfirmNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (!answered){
-                    if(rb1.isChecked() || rb2.isChecked() || rb3.isChecked()){
+                if (!answered) {
+                    if (rb1.isChecked() || rb2.isChecked() || rb3.isChecked()) {
                         checkAnswer();
                     } else {
                         Toast.makeText(EasyQuiz1.this, "Please select an Answer", Toast.LENGTH_SHORT).show();
@@ -91,7 +90,8 @@ public class EasyQuiz1 extends AppCompatActivity {
             }
         });
     }
-    private void showNextQuestion(){
+
+    private void showNextQuestion() {
         rb1.setTextColor(textColorDefaultRb);
         rb2.setTextColor(textColorDefaultRb);
         rb3.setTextColor(textColorDefaultRb);
@@ -116,7 +116,8 @@ public class EasyQuiz1 extends AppCompatActivity {
             finishQuiz();
         }
     }
-    private void startCountDown (){
+
+    private void startCountDown() {
         countDownTimer = new CountDownTimer(timeLeftInMillis, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
@@ -142,31 +143,32 @@ public class EasyQuiz1 extends AppCompatActivity {
 
         if (timeLeftInMillis < 10000) {
             textViewCountdown.setTextColor(Color.RED);
-        }else {
+        } else {
             textViewCountdown.setTextColor(textColorDefaultCd);
         }
     }
 
 
-    private void checkAnswer(){
+    private void checkAnswer() {
         answered = true;
         countDownTimer.cancel();
 
         RadioButton rbSelected = findViewById(rbGroup.getCheckedRadioButtonId());
         int answerNr = rbGroup.indexOfChild(rbSelected) + 1;
 
-        if (answerNr == currentQuestion.getAnswerNr()){
+        if (answerNr == currentQuestion.getAnswerNr()) {
             score++;
             textViewScore.setText("Score: " + score);
         }
         showSolution();
     }
-    private void showSolution(){
+
+    private void showSolution() {
         rb1.setTextColor(Color.RED);
         rb2.setTextColor(Color.RED);
         rb3.setTextColor(Color.RED);
 
-        switch (currentQuestion.getAnswerNr()){
+        switch (currentQuestion.getAnswerNr()) {
             case 1:
                 rb1.setTextColor(Color.GREEN);
                 textViewQuestion.setText("Answer 1 is correct");
@@ -180,13 +182,14 @@ public class EasyQuiz1 extends AppCompatActivity {
                 textViewQuestion.setText("Answer 3 is correct");
                 break;
         }
-        if (questionCounter < questionCountTotal){
+        if (questionCounter < questionCountTotal) {
             buttonConfirmNext.setText("Next");
-        }else {
+        } else {
             buttonConfirmNext.setText("Finish");
         }
     }
-    private void finishQuiz(){
+
+    private void finishQuiz() {
         Intent resultIntent = new Intent();
         resultIntent.putExtra(EXTRA_SCORE, score);
         setResult(RESULT_OK, resultIntent);
@@ -195,7 +198,7 @@ public class EasyQuiz1 extends AppCompatActivity {
 
     @Override
     public void onBackPressed() {
-        if (backPressedItem + 2000 > System.currentTimeMillis()){
+        if (backPressedItem + 2000 > System.currentTimeMillis()) {
             finishQuiz();
         } else {
             Toast.makeText(this, "Press back again to finish", Toast.LENGTH_SHORT).show();
@@ -206,7 +209,7 @@ public class EasyQuiz1 extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if (countDownTimer !=null){
+        if (countDownTimer != null) {
             countDownTimer.cancel();
         }
     }
